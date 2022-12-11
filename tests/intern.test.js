@@ -1,6 +1,9 @@
 const Intern = require("../lib/Intern")
+const { test, expect } = require("@jest/globals");
 
-test("Can instantiate Intern instance", () => {
-    const e = new Intern();
-    expect(typeof(e)).toBe("object");
-  });
+
+test('Interns role', () => {
+    const internRole = 'Intern';
+    const newIntern = new Intern('name', 1, 'email', 'school');
+    expect(newIntern.getRole()).toBe(internRole);
+});

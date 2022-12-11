@@ -1,6 +1,8 @@
-const Employee = require("../lib/Employee");
+// const Employee = require("../lib/Employee");
 
 const generateTeam = team => {
+
+    // Generating the Manager HTML
     const generateManager = manager => {
         return 
         `
@@ -20,6 +22,7 @@ const generateTeam = team => {
         `;
     };
 
+    // Generating the Engineer HTML
     const generateEngineer = engineer => {
         return
         `
@@ -39,6 +42,7 @@ const generateTeam = team => {
         `;
     };
 
+    // Generating the Intern HTML
     const generateIntern = intern => {
         return
         `
@@ -111,7 +115,5 @@ module.exports = team => {
         </div> 
     </body>
     </html>
-    
-    
     `
 }
