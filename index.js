@@ -1,14 +1,11 @@
+const fs = require("fs");
+const inquirer = require("inquirer")
 const Employee = require("./lib/Employee");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const generateHTML = require("./src/genHTML")
 
-//Write Profiles for the team
-const fs = require("fs");
-
-// Inquirer is required in order to ask the user questions
-const inquirer = require("inquirer")
 
 // Empty Array to generate the team
 const teamArray = [];
